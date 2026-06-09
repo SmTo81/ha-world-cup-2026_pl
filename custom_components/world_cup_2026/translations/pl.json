@@ -1,0 +1,180 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "World Cup 2026",
+        "description": "Wprowadź swój klucz API z football-data.org. Darmowy klucz jest dostępny na stronie https://www.football-data.org/client/register",
+        "data": {
+          "api_key": "Klucz API"
+        },
+        "data_description": {
+          "api_key": "Twój osobisty klucz API z football-data.org (darmowy pakiet jest wystarczający)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie można połączyć się z football-data.org. Sprawdź swoje połączenie sieciowe i spróbuj ponownie.",
+      "invalid_auth": "Niepoprawny klucz API. Sprawdź klucz na stronie swojego konta football-data.org.",
+      "unknown": "Wystąpił nieoczekiwany błąd. Szczegółowe informacje znajdziesz w logach Home Assistant."
+    },
+    "abort": {
+      "already_configured": "Integracja World Cup 2026 jest już skonfigurowana."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "World Cup 2026 — Ustawienia",
+        "description": "Skonfiguruj działanie integracji.",
+        "data": {
+          "demo_mode": "Tryb demonstracyjny"
+        },
+        "data_description": {
+          "demo_mode": "Ładuje przykładowe dane terminarza zamiast odpytywać aktywne API. Przydatne do tworzenia kart i paneli, gdy turniej nie jest aktywny. Integracja przeładuje się automatycznie po zapisaniu."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "fixtures": {
+        "name": "Terminarz"
+      },
+      "standings": {
+        "name": "Tabele"
+      },
+      "next_match": {
+        "name": "Najbliższy mecz"
+      },
+      "live_matches": {
+        "name": "Mecze na żywo"
+      },
+      "today_matches": {
+        "name": "Dzisiejsze mecze"
+      },
+      "tomorrow_matches": {
+        "name": "Jutrzejsze mecze"
+      },
+      "completed_matches": {
+        "name": "Zakończone mecze"
+      },
+      "group_fixtures": {
+        "name": "{group}"
+      },
+      "stage_fixtures": {
+        "name": "{stage}"
+      },
+      "total_matches_played": {
+        "name": "Wszystkie rozegrane mecze"
+      },
+      "matches_remaining": {
+        "name": "Pozostałe mecze"
+      },
+      "progress": {
+        "name": "Postęp turnieju"
+      },
+      "total_goals": {
+        "name": "Suma goli"
+      },
+      "goals_per_match": {
+        "name": "Średnia goli na mecz"
+      },
+      "teams_remaining": {
+        "name": "Pozostałe drużyny"
+      },
+      "current_stage": {
+        "name": "Aktualna faza"
+      },
+      "top_scorers": {
+        "name": "Najlepsi strzelcy"
+      },
+      "top_scorer": {
+        "name": "Król strzelców"
+      },
+      "top_assists": {
+        "name": "Najlepsi asystenci"
+      },
+      "top_assist": {
+        "name": "Król asyst"
+      },
+      "biggest_win": {
+        "name": "Najwyższe zwycięstwo"
+      },
+      "highest_scoring_match": {
+        "name": "Mecz z największą liczbą goli"
+      },
+      "latest_result": {
+        "name": "Ostatni wynik"
+      },
+      "top_scoring_team": {
+        "name": "Najbardziej bramkostrzelna drużyna"
+      },
+      "best_defence": {
+        "name": "Najlepsza obrona"
+      },
+      "eliminated_teams": {
+        "name": "Wyeliminowane drużyny"
+      },
+      "live_goals": {
+        "name": "Gole na żywo"
+      },
+      "countdown": {
+        "name": "Odliczanie"
+      },
+      "days_until_final": {
+        "name": "Dni do finału"
+      },
+      "stadiums": {
+        "name": "Stadiony"
+      },
+      "host_cities": {
+        "name": "Miasta-gospodarze"
+      },
+      "final_venue": {
+        "name": "Miejsce finału"
+      },
+      "group_leaders": {
+        "name": "Liderzy grup"
+      },
+      "extra_time_matches": {
+        "name": "Mecze z dogrywką"
+      },
+      "penalty_shootouts": {
+        "name": "Rzuty karne"
+      },
+      "top_scorer_no_penalties": {
+        "name": "Najlepszy strzelec (bez karnych)"
+      },
+      "goal_contributions": {
+        "name": "Klasyfikacja kanadyjska"
+      },
+      "penalty_goals": {
+        "name": "Gole z rzutów karnych"
+      },
+      "btts_rate": {
+        "name": "Wskaźnik BTTS (obie strzelą)"
+      },
+      "over_2_5_goals_rate": {
+        "name": "Wskaźnik powyżej 2.5 gola"
+      },
+      "draw_rate": {
+        "name": "Wskaźnik remisów"
+      },
+      "clean_sheets": {
+        "name": "Czyste konta"
+      },
+      "unbeaten_teams": {
+        "name": "Niepokonane drużyny"
+      },
+      "comebacks": {
+        "name": "Remontady (powroty do gry)"
+      },
+      "first_half_goals": {
+        "name": "Gole w pierwszej połowie"
+      },
+      "second_half_goals": {
+        "name": "Gole w drugiej połowie"
+      }
+    }
+  }
+}
